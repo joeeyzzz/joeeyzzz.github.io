@@ -13,88 +13,96 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="nav__brand" href="#top">&lt;dev/&gt;</a>
-        <ul class="nav__links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#stack">Stack</a></li>
-          <li><a href="#education">Education</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          José Luis Gutiérrez Álvarez.
+          <br/>
+          <span class="text-color-main name">Software Engineer</span>
+        </h1>
+        <!--
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" style="text-align: right;" href="#contact">Get in touch</a>
+        </p>
+        -->
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
 
-    <main id="top">
-      <!-- HERO -->
-      <section class="hero">
-        <div class="hero__content">
-          <p class="hero__eyebrow">Software Engineer</p>
-          <h1 class="hero__title text-balance">
-            <span class="accent">Java</span> specialist building efficient,
-            scalable software.
-          </h1>
-          <p class="hero__lead text-pretty">
-            I started coding at the age of 10, and technology has been my
-            passion ever since. I focus on backend development, code
-            optimization and clean engineering practices.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#experience">View experience</a>
-            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/profile.jpg"
+              alt="Profile Image"
+              width="450"
+              height="350"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              My concern about web applications and the world of computing started at a young age. 
+              I started my studies in Software Engineering in 2018, thus learning Javascript, Java, 
+              C++, PHP, Node.js, Python, HTML, Angular, Android, CSS and SCSS among others.
+            </p>
+            <p class="about-wrapper__info-text">
+              I consider myself a person committed to his work, organized and responsable who looks 
+              forward to work on software projects. You never know enough, so I like to be in a continuous learning procedure.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="./assets/JoseLuisGutierrezAlvarezCV.pdf" target="_blank" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
           </div>
         </div>
-        <div class="hero__photo">
-          <img
-            src="assets/profile.jpeg"
-            width="320"
-            height="400"
-          />
-        </div>
-      </section>
+      </div>
+    </section>
+    <!-- /END About Section -->
 
-      <!-- ABOUT -->
-      <section id="about" class="section">
-        <div class="section__head">
-          <span class="section__index">01</span>
-          <h2 class="section__title">About me</h2>
-        </div>
-        <div class="prose">
-          <p>
-            I'm a Software Engineer specialized in designing and building robust,
-            scalable and maintainable backend systems. Throughout my career I've
-            led the implementation of microservice architectures, REST APIs and
-            enterprise solutions that are now running in production, serving real
-            clients in sectors such as banking and technology.
-          </p>
-          <p>
-            My value isn't just writing code: I bring the technical judgment to
-            make sound architecture decisions, I care about quality through
-            testing and best practices (SOLID, clean code, CI/CD), and I turn
-            business requirements into software that works and lasts. I'm
-            comfortable in agile teams and communicate clearly with both
-            technical and business stakeholders.
-          </p>
-          <p>
-            If you're looking for a committed, autonomous and results-driven
-            engineer to strengthen your team or deliver a project,
-            <a class="inline-link" href="#contact">let's talk</a>.
-          </p>
-        </div>
-      </section>
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Work</h2>
 
-      <!-- EXPERIENCE -->
-      <section id="experience" class="section">
-        <div class="section__head">
-          <span class="section__index">02</span>
-          <h2 class="section__title">Experience</h2>
-        </div>
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">FTE Jerez</h3>
+              <p class="project-wrapper__text-info">
+                I handle analysis and Back-End development using Java with the Spring Framework in a Microservices Architecture, 
+                along with Front-End development in HTML5 and JavaScript. 
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://www.ftejerez.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Visit Site</a
+                >
+              </div>
+            </div>
 
-        <ol class="timeline">
-          <li class="job">
-            <div class="job__meta">
-              <span class="job__period">Apr 2025 — Present</span>
-              <span class="job__badge">Current</span>
+            <div class="project-wrapper__image">
+              <a href="https://www.ftejerez.com/" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/FTEJerez.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
             </div>
             <h3 class="job__role">Java Software Engineer</h3>
             <p class="job__company">Phoeniqs (Switzerland)</p>
@@ -181,152 +189,34 @@
             <div class="job__meta">
               <span class="job__period">Apr 2023 — Oct 2023</span>
             </div>
-            <h3 class="job__role">PHP Software Engineer</h3>
-            <p class="job__company">WiZink Bank (Spain)</p>
-            <p class="job__desc text-pretty">
-              I developed a REST API, applying hexagonal architecture in PHP 8 with Symfony and a strong focus on
-              clean, decoupled design.
-            </p>
-            <ul class="job__points">
-              <li>
-                Applied SOLID principles and the CQRS pattern to cleanly separate
-                reads and writes, improving the system's scalability and
-                testability.
-              </li>
-              <li>
-                Implemented caching with Redis and deployed on Amazon Web
-                Services using Docker containers, optimizing performance for the
-                most demanding operations.
-              </li>
-              <li>
-                Collaborated with a distributed team using Git and BitBucket
-                within a banking environment with high security and quality
-                standards.
-              </li>
-            </ul>
-            <ul class="tags">
-              <li>PHP</li>
-              <li>Symfony</li>
-              <li>Hexagonal Architecture</li>
-              <li>CQRS</li>
-              <li>AWS</li>
-              <li>Docker</li>
-              <li>Redis</li>
-            </ul>
-          </li>
-        </ol>
-      </section>
+          </article>
+          <!-- /END Project -->
 
-      <!-- STACK -->
-      <section id="stack" class="section">
-        <div class="section__head">
-          <span class="section__index">03</span>
-          <h2 class="section__title">Stack &amp; tools</h2>
         </div>
-        <div class="stack-grid">
-          <div class="stack-card">
-            <h3 class="stack-card__title">Languages</h3>
-            <ul>
-              <li>Java 21</li>
-              <li>PHP</li>
-              <li>Python</li>
-              <li>C++</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-          <div class="stack-card">
-            <h3 class="stack-card__title">Frameworks</h3>
-            <ul>
-              <li>Quarkus</li>
-              <li>Spring</li>
-              <li>Symfony</li>
-              <li>Django</li>
-              <li>Hibernate</li>
-            </ul>
-          </div>
-          <div class="stack-card">
-            <h3 class="stack-card__title">Data &amp; Infra</h3>
-            <ul>
-              <li>PostgreSQL</li>
-              <li>SQL Server</li>
-              <li>Redis</li>
-              <li>Docker</li>
-              <li>OpenShift</li>
-              <li>Open Service Broker (OSB)</li>
-              <li>AWS</li>
-              <li>Flyway</li>
-            </ul>
-          </div>
-          <div class="stack-card">
-            <h3 class="stack-card__title">Quality &amp; Agile</h3>
-            <ul>
-              <li>JUnit 5</li>
-              <li>GitLab CI/CD</li>
-              <li>Grafana</li>
-              <li>Keycloak</li>
-              <li>Scrum / Agile</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
+    <!-- End Projects Section -->
 
-      <!-- EDUCATION -->
-      <section id="education" class="section">
-        <div class="section__head">
-          <span class="section__index">04</span>
-          <h2 class="section__title">Education &amp; certifications</h2>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">Please feel free to contact me at any time by clicking the botton below!</p>
+          <a href="mailto: jluisgutierrez99@gmail.com" class="cta-btn cta-btn--resume">Email me!</a>
         </div>
-        <div class="two-col">
-          <div>
-            <h3 class="minor-title">Education</h3>
-            <ul class="list">
-              <li>
-                <strong>B.Sc. in Computer Engineering</strong>
-                <span>Specialization in Software Engineering</span>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="minor-title">Certifications</h3>
-            <ul class="list">
-              <li>
-                <strong>Certified SAFe 6 Scrum Master</strong>
-              </li>
-              <li>
-                <strong>COIL — The International Project Manager</strong>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="minor-title">Languages</h3>
-            <ul class="list">
-              <li><strong>Spanish</strong><span>Native</span></li>
-              <li>
-                <strong>English</strong><span>Full professional proficiency</span>
-              </li>
-              <li>
-                <strong>Italian</strong><span>Limited working proficiency</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
+    <!-- END Contact Section -->
 
-      <!-- CONTACT -->
-      <section id="contact" class="section section--contact">
-        <div class="section__head">
-          <span class="section__index">05</span>
-          <h2 class="section__title">Contact</h2>
-        </div>
-        <p class="contact__lead text-pretty">
-          Have a project or an opportunity? I'd love to hear from you.
-        </p>
-        <div class="contact__links">
-          <a class="btn btn--primary" href="mailto:jluisgutierrez99@gmail.com"
-            >Send email</a
-          >
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
           <a
-            class="btn btn--ghost"
             href="https://www.linkedin.com/in/joseluis-gutierrez-alvarez/"
             target="_blank"
             rel="noopener noreferrer"

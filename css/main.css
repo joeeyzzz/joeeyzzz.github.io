@@ -243,51 +243,79 @@ main {
 .job__meta {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.5rem;
+  background: url('../assets/background-pc.jpg') no-repeat center center;
+  background-size:cover;
+  font-weight: 400;
+  color: #272341;
+  padding: 0rem 5.6rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  line-height: 1.2;
+  animation: hidden 1000ms linear forwards;
 }
-
-.job__period {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.8rem;
-  color: var(--muted);
+@media (max-width: 56.25em) {
+  #hero {
+    justify-content: center;
+    background: url('../assets/background-mobile.jpg') no-repeat center center;
+    background-size: cover;
+  }
 }
-
-.job__badge {
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  border-radius: 999px;
-  padding: 0.1rem 0.6rem;
+@media (max-width: 37.5em) {
+  #hero {
+    padding: 0rem 1.6rem;
+    background: url('../assets/background-mobile.jpg') no-repeat center center;
+    background-size: cover;
+  }
 }
-
-.job__role {
-  font-size: 1.15rem;
-  font-weight: 600;
+#hero .hero-title {
+  font-size: 5.6rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+  text-align: right;
 }
-
-.job__company {
-  color: var(--accent);
-  font-size: 0.9rem;
-  margin-bottom: 0.75rem;
+#hero .hero-title span {
+  margin: 0;
+  display: inline-block;
 }
-
-.job__desc {
-  color: var(--muted);
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
+@media (max-width: 75em) {
+  #hero .hero-title {
+    font-size: 4rem;
+    text-align: center;
+  }
 }
-
-.job__points {
-  list-style: none;
-  margin: 0 0 1.25rem;
-  padding: 0;
+@media (max-width: 56.25em) {
+  #hero .hero-title {
+    font-size: 3.6rem;
+    text-align: center;
+  }
+}
+@media (max-width: 37.5em) {
+  #hero .hero-title {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+@media (max-width: 20em) {
+  #hero .hero-title {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+}
+#hero .hero-cta {
   display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+}
+@media (max-width: 56.25em) {
+  #hero .hero-cta {
+    justify-content: center;
+  }
+}
+#hero .hero-cta a {
+  font-size: 2.4rem;
+  text-align: right;
 }
 
 .job__points li {
